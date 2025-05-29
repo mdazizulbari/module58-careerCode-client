@@ -7,7 +7,7 @@ const NavBar = () => {
 
   const handleSignOut=()=>{
     signOutUser()
-    .then(()=>{console})
+    .then(()=>{console.log()})
   }
 
   const links = (
