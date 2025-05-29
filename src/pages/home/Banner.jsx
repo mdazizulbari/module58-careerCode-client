@@ -11,7 +11,7 @@ const Banner = () => {
             className="max-w-sm rounded-lg shadow-2xl"
           />
         </div>
-        <div>
+        <div className="flex-1">
           <motion.h1
             initial={{ rotate: -180 }}
             animate={{ rotate: 0, transition: { duration: 4 } }}
