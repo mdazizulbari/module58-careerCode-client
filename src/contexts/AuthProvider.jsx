@@ -9,7 +9,7 @@ import { auth } from "../firebase/firebase.init";
 
 const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [user,setUser]=useState(null)
+  const [user, setUser] = useState(null);
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -21,17 +21,16 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  useEffect(()=>{
-    const unSubscribe= onAuthStateChanged(auth,currentUser=>{
-      setUser(currentUser)
-      setLoading(false)
-      console.log('user in the auth state change',currentUser)
-
-    })
-    return ()={
-      unSubscribe()
-    }
-  })
+  useEffect(() => {
+    const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      setLoading(false);
+      console.log("user in the auth state change", currentUser);
+    });
+    return () => {
+      unSubscribe();
+    };
+  });
 
   const authInfo = { loading, createUser, signInUser };
 
