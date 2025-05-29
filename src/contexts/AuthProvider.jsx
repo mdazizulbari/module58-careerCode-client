@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AuthContext } from "./AuthContext";
+import { createUserWithEmailAndPassword } from "firebase/auth/cordova";
 
 const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
