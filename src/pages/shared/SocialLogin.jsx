@@ -1,6 +1,7 @@
 import React from "react";
 
 const SocialLogin = () => {
+    const 
   return (
     <div>
       <div className="divider">OR</div>
