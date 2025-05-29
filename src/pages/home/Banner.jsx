@@ -9,7 +9,7 @@ const Banner = () => {
           <motion.img
             animate={{ y: [0, 50, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
-            src=""
+            src="https://images.unsplash.com/photo-1748392242228-fe7ebd0b8a86?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             className="max-w-sm rounded-t-4xl rounded-br-4xl border-s-8 border-b-8 "
           />
           <motion.img
