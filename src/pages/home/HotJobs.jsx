@@ -1,6 +1,6 @@
 import React from "react";
 
-const HotJobs = () => {
+const HotJobs = ({jobsPromise}) => {
 const 
   return <div></div>;
 };
