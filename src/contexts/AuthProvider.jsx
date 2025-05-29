@@ -19,7 +19,9 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  useEffect(())
+  useEffect(()=>{
+    const unSubs
+  })
 
   const authInfo = { loading, createUser, signInUser };
 
