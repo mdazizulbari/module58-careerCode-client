@@ -5,7 +5,7 @@ import { AuthContext } from "../contexts/AuthContext";
 const SignIn = () => {
   const { createUser } = use(AuthContext);
 
-  const handleResister = (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
