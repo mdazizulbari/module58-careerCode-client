@@ -5,7 +5,7 @@ const HotJobs = () => {
   .then((res) =>
     res.json()
   );
-  <div className="cathc"></div>
+  .cathc
 
   return <div></div>;
 };
