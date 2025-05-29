@@ -22,7 +22,7 @@ const Banner = () => {
             className="text-5xl font-bold"
           >
             Remote <motion.span animate={{
-              color: 
+              color: ['']
             }}>Jobs</motion.span> For You
           </motion.h1>
           <p className="py-6">
