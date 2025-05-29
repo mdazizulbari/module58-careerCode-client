@@ -6,7 +6,7 @@ const SocialLogin = () => {
 
   const handleGoogleSignIn = () => {
     signInWithGoogle()
-    .th
+    .
   };
 
   return (
