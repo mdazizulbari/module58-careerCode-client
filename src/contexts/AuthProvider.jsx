@@ -22,7 +22,7 @@ const AuthProvider = ({ children }) => {
   };
 
   useEffect(()=>{
-    const unSubscribe= onAuthStateChanged(auth,currentUser)
+    const unSubscribe= onAuthStateChanged(auth,currentUser=>{})
   })
 
   const authInfo = { loading, createUser, signInUser };
