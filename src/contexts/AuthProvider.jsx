@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  const authInfo = { loading, createUser, signInUser };
+  const authInfo = { user, loading, createUser, signInUser };
 
   return <AuthContext value={authInfo}>{children}</AuthContext>;
 };
