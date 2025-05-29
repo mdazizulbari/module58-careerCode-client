@@ -5,7 +5,7 @@ const SocialLogin = () => {
   const { signInWithGoogle } = use(AuthContext);
 
   const hangleGoogleSignIn=()=>{
-
+sign
   }
   return (
     <div>
