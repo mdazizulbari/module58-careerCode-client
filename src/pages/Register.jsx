@@ -13,8 +13,8 @@ const Register = () => {
     const password = form.password.value;
     console.log(email, password);
     // create user
-    createUser(email, password);
-    
+    createUser(email, password)
+    .then
   };
 
   return (
