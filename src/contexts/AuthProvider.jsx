@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
     return () => {
       unSubscribe();
     };
-  },[]);
+  }, []);
 
   const authInfo = { loading, createUser, signInUser };
 
