@@ -3,7 +3,7 @@ import { AuthContext } from './AuthContext';
 
 const AuthProvider = ({children}) => {
 const createUser=(email,password){
-    return createUserWithEmailAndPassword(email,password)
+    return createUserWithEmailAndPassword(authemail,password)
 }
 
     const authInfo={
