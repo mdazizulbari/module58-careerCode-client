@@ -1,9 +1,9 @@
 import Lottie from "lottie-react";
-import React from "react";
+import React, { use } from "react";
 import registerLottie from "../assets/lotties/register.json";
 
 const Register = () => {
-const {}
+const {}=use()
 
   const handleResister = (e) => {
     e.preventDefault();
