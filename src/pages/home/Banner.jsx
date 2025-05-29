@@ -11,7 +11,7 @@ const Banner = () => {
         />
         <div>
           <motion.h1 initial={{rotate: -180}}
-            animate={{rotate: -180,  transition: { duration: 4 } }}
+            animate={{rotate: 0,  transition: { duration: 4 } }}
             className="text-5xl font-bold"
           >
             Latest Jobs For You
