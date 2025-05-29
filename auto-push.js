@@ -20,6 +20,6 @@ if (!cooldown) {
     }
     setTimeout(() => {
       cooldown = false;
-    }, 3000); // Wait 3 seconds before allowing next push
+    }, 15000); // Wait 3 seconds before allowing next push
   });
 }
