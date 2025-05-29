@@ -11,7 +11,10 @@ const SocialLogin = () => {
   return (
     <div>
       <div className="divider">OR</div>
-      <button onClick={()=>{}} className="btn bg-white text-black border-[#e5e5e5]">
+      <button
+        onClick={() => hangleGoogleSignIn()}
+        className="btn bg-white text-black border-[#e5e5e5]"
+      >
         <svg
           aria-label="Google logo"
           width="16"
