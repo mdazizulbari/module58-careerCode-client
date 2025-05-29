@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="flex-1">
           <img
             src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-t-4xl rou4 "
+            className="max-w-sm rounded-t-4xl rou4b "
           />
         </div>
         <div className="flex-1">
