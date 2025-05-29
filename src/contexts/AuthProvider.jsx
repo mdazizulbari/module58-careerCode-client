@@ -30,7 +30,9 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  const signInWithGoogle=()=>{}
+  const signInWithGoogle=()=>{
+    se
+  }
 
 
   useEffect(() => {
