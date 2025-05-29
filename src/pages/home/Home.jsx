@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <HotJobs />
+      <HotJobs jobsPromise />
     </div>
   );
 };
