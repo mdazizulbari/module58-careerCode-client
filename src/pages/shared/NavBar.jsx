@@ -7,6 +7,7 @@ const NavBar = () => {
 
   const handleSignOut=()=>{
     signOutUser()
+    .
   }
 
   const links = (
