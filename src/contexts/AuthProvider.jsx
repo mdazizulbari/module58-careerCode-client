@@ -31,7 +31,8 @@ const AuthProvider = ({ children }) => {
   };
 
   const signInWithGoogle=()=>{
-    se
+    setLoading(true)
+    
   }
 
 
