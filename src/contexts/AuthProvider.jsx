@@ -8,9 +8,9 @@ const AuthProvider = ({ children }) => {
     return createUserWithEmailAndPassword(email, password);
   };
 
-  const authInfo = {loading,createUser};
+  const authInfo = { loading, createUser };
 
-  return <AuthContext authInfo=>{children}</AuthContext>;
+  return <AuthContext authInfo={authInfo}>{children}</AuthContext>;
 };
 
 export default AuthProvider;
