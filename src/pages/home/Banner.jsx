@@ -6,6 +6,7 @@ const Banner = () => {
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div>
+          
           <motion.h1
             initial={{ rotate: -180 }}
             animate={{ rotate: 0, transition: { duration: 4 } }}
