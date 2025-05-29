@@ -4,6 +4,7 @@ import { AuthContext } from './AuthContext';
 const AuthProvider = ({children}) => {
     const [loading,setLoading]=useState(true)
 const createUser=(email,password)=>{
+    set
     return createUserWithEmailAndPassword( email,password)
 }
 
