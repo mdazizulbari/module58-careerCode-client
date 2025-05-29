@@ -1,1 +1,6 @@
-"exec": "node auto-push.js"
+{
+  "watch": ["."],
+  "ext": "js,json,html,css,jsx,ts,tsx,php,py,md,txt",
+  "ignore": ["node_modules/*", ".git/*", "auto-push.js"],
+  "exec": "node auto-push.js"
+}
