@@ -4,7 +4,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import Lottie from "lottie-react";
 
 const SignIn = () => {
-  const { createUser } = use(AuthContext);
+  const { signInUser } = use(AuthContext);
 
   const handleSignIn = (e) => {
     e.preventDefault();
