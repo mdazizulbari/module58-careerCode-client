@@ -1,7 +1,7 @@
 import React from "react";
 
 const SocialLogin = () => {
-    const {sign}
+    const {signInWithGoogle}
   return (
     <div>
       <div className="divider">OR</div>
