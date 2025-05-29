@@ -1,19 +1,15 @@
-import React, { useState } from 'react';
-import { AuthContext } from './AuthContext';
+import React, { useState } from "react";
+import { AuthContext } from "./AuthContext";
 
-const AuthProvider = ({children}) => {
-    const [loading,setLoading]=useState()
-const createUser=(email,password)=>{
-    return createUserWithEmailAndPassword( email,password)
-}
+const AuthProvider = ({ children }) => {
+  const [loading, setLoading] = useState(true);
+  const createUser = (email, password) => {
+    return createUserWithEmailAndPassword(email, password);
+  };
 
-    const authInfo={
+  const authInfo = {};
 
-    }
-
-    return (
-        <AuthContext>{children}</AuthContext>
-    );
+  return <AuthContext>{children}</AuthContext>;
 };
 
 export default AuthProvider;
