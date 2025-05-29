@@ -28,7 +28,7 @@ const AuthProvider = ({ children }) => {
       console.log('user in the auth state change',currentUser)
 
     })
-    return()
+    return()=
   })
 
   const authInfo = { loading, createUser, signInUser };
