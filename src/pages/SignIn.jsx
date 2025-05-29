@@ -1,4 +1,5 @@
 import React from "react";
+import registerLottie from "../assets/lotties/register.json";
 
 const SignIn = () => {
   return (
