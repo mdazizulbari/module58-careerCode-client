@@ -8,7 +8,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase/firebase.init";
 
-const googleProvider
+const googleProvider=new google
 
 const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
