@@ -48,7 +48,7 @@ const NavBar = () => {
           Register
         </NavLink>
         <NavLink className={"btn"} to={"/register"}>
-        Sign
+        Sign In
         </NavLink>
       </div>
     </div>
