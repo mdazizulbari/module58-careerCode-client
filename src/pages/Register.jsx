@@ -57,7 +57,7 @@ const Register = () => {
                 <button className="btn btn-neutral mt-4">Register</button>
               </fieldset>
             </form>
-            
+            <
           </div>
         </div>
       </div>
