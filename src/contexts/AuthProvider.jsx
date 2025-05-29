@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signOut,
 } from "firebase/auth";
 import { auth } from "../firebase/firebase.init";
 
@@ -23,7 +24,7 @@ const AuthProvider = ({ children }) => {
 
   const signOutUser=()=>{
     setLoading(true)
-    return sigou
+    return signOut(auth)
   }
 
   useEffect(() => {
