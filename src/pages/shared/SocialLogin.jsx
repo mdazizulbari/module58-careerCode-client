@@ -3,7 +3,9 @@ import { AuthContext } from "../../contexts/AuthContext";
 
 const SocialLogin = () => {
   const { signInWithGoogle } = use(AuthContext);
-  const hangleGoogleSignIn=()
+  const hangleGoogleSignIn=()=>{
+
+  }
   return (
     <div>
       <div className="divider">OR</div>
