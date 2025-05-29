@@ -7,6 +7,7 @@ const SocialLogin = () => {
   const hangleGoogleSignIn = () => {
     signInWithGoogle();
   };
+
   return (
     <div>
       <div className="divider">OR</div>
