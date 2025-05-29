@@ -1,7 +1,7 @@
 import React from "react";
 
 const HotJobs = () => {
-const 
+const jobsPromise
   return <div></div>;
 };
 
