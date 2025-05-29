@@ -4,7 +4,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 const SocialLogin = () => {
   const { signInWithGoogle } = use(AuthContext);
 
-  const hangleGoogleSignIn = () => {
+  const handleGoogleSignIn = () => {
     signInWithGoogle();
   };
 
