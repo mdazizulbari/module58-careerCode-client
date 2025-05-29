@@ -14,6 +14,7 @@ const Register = () => {
     console.log(email, password);
     // create user
     createUser(email, password);
+    
   };
 
   return (
