@@ -8,7 +8,7 @@ const NavBar = () => {
   const handleSignOut=()=>{
     signOutUser()
     .then(()=>{console.log('Signed out successfully')})
-    .catch(err=>{console.log()})
+    .catch(err=>{console.log(err)})
   }
 
   const links = (
