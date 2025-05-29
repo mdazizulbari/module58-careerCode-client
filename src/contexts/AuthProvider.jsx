@@ -13,7 +13,7 @@ const AuthProvider = ({ children }) => {
 
   const signInUser=(email,password)=>{
     setLoading(true)
-    return signInWithEmailAndPassword(auth,email,apss)
+    return signInWithEmailAndPassword(auth,email,password)
   }
 
   const authInfo = { loading, createUser };
