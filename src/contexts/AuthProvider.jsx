@@ -2,7 +2,9 @@ import React from 'react';
 import { AuthContext } from './AuthContext';
 
 const AuthProvider = ({children}) => {
-const createUser=(email,password)
+const createUser=(email,password){
+    
+}
 
     const authInfo={
 
