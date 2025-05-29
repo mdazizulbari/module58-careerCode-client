@@ -10,7 +10,7 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = { loading, createUser };
 
-  return <AuthContext authInfo={authInfo}>{children}</AuthContext>;
+  return <AuthContext value={authInfo}>{children}</AuthContext>;
 };
 
 export default AuthProvider;
