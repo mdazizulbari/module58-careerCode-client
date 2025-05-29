@@ -13,7 +13,7 @@ const SignIn = () => {
     const password = form.password.value;
     console.log(email, password);
     // create user
-    User(email, password)
+    signInUser(email, password)
       .then((result) => {
         console.log(result.user);
       })
