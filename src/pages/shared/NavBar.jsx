@@ -48,6 +48,8 @@ const NavBar = () => {
       </div>
       <div className="navbar-end">
         {user? <button className="btn">Sign Out</button>:
+
+        {user? <button></button>}
         }
       </div>
     </div>
