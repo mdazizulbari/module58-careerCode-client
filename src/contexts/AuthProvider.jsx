@@ -20,7 +20,7 @@ const AuthProvider = ({ children }) => {
   };
 
   useEffect(()=>{
-    const unSubscribe=
+    const unSubscribe= onauth
   })
 
   const authInfo = { loading, createUser, signInUser };
