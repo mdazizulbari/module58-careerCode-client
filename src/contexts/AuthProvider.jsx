@@ -23,7 +23,7 @@ const AuthProvider = ({ children }) => {
 
   const signOutUser=()=>{
     setLoading(true)
-    return
+    return sig
   }
 
   useEffect(() => {
