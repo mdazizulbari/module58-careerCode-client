@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HotJobs = () => {
-    const jobsPromise =fetch('')
+    const jobsPromise =fetch('http://localhost:5000/jobs')
 
 
     return (
