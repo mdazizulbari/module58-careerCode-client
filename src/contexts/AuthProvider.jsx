@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AuthContext } from "./AuthContext";
-import { createUserWithEmailAndPassword } from "firebase/auth/web-extension";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
