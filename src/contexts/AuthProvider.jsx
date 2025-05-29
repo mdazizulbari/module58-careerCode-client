@@ -9,7 +9,7 @@ import { auth } from "../firebase/firebase.init";
 
 const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [user,setUser]
+  const [user,setUser]=useState()
 
   const createUser = (email, password) => {
     setLoading(true);
