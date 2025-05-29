@@ -5,6 +5,8 @@ import { AuthContext } from "../../contexts/AuthContext";
 const NavBar = () => {
   const { user } = use(AuthContext);
 
+  const hand
+
   const links = (
     <>
       <li>
