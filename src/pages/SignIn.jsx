@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import registerLottie from "../assets/lotties/register.json";
 import { AuthContext } from "../contexts/AuthContext";
+import Lottie from "lottie-react";
 
 const SignIn = () => {
   const { createUser } = use(AuthContext);
