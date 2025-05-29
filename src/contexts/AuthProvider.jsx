@@ -26,7 +26,7 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser)
       setLoading(false)
       console.log('user in the auth state change',currentUser)
-      
+
     })
   })
 
