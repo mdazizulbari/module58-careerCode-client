@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="flex-1">
           <motion.img
-          animate={{y:}}
+          animate={{y:50}}
             src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
             className="max-w-sm rounded-t-4xl rounded-br-4xl border-s-8 border-b-8 "
           />
