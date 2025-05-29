@@ -4,7 +4,7 @@ import registerLottie from "../assets/lotties/register.json";
 import { AuthContext } from "../contexts/AuthContext";
 
 const Register = () => {
-const {create}=use(AuthContext)
+const {createUser}=use(AuthContext)
 
   const handleResister = (e) => {
     e.preventDefault();
