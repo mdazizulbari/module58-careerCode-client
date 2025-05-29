@@ -27,7 +27,7 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  const 
+  const goo
 
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
