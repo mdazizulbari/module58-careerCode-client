@@ -10,7 +10,7 @@ const Banner = () => {
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <motion.h1 initial
+          <motion.h1 initial={}
             animate={{ rotate: -180, transition: { duration: 4 } }}
             className="text-5xl font-bold"
           >
