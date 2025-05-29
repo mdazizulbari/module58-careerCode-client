@@ -3,7 +3,7 @@ import React from "react";
 import registerLottie from "../assets/lotties/register.json";
 
 const Register = () => {
-const 
+const {}
 
   const handleResister = (e) => {
     e.preventDefault();
