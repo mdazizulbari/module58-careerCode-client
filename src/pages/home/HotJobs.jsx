@@ -5,7 +5,7 @@ const HotJobs = () => {
   .then((res) =>
     res.json()
   );
-  .cat
+  .catch
 
   return <div></div>;
 };
