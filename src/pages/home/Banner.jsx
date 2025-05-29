@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 py-30">
+    <div className="hero bg-base-200 py-40">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="flex-1">
           <motion.img
