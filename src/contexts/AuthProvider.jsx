@@ -33,7 +33,7 @@ const AuthProvider = ({ children }) => {
 
   const signInWithGoogle=()=>{
     setLoading(true)
-    return signInWithPopup
+    return signInWithPopup(auth,googleProvider)
   }
 
 
