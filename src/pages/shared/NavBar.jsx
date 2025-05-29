@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 import { AuthContext } from "../../contexts/AuthContext";
 
 const NavBar = () => {
-  const { user } = use(AuthContext);
+  const { user,signOutUser } = use(AuthContext);
 
   const handleSignOut=()=>{
     sign
