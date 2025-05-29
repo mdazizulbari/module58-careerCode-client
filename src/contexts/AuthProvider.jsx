@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  const signInWith=()=>{}
+  const signInWithgoogle=()=>{}
 
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
