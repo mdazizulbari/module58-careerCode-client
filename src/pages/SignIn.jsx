@@ -57,6 +57,7 @@ const SignIn = () => {
                 <button className="btn btn-neutral mt-4">Sign In</button>
               </fieldset>
             </form>
+            <SocialLogin />
           </div>
         </div>
       </div>
