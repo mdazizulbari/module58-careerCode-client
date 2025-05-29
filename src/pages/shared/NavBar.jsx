@@ -48,7 +48,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <button onClick={()} className="btn">Sign Out</button>
+          <button onClick={()=>handleSignOut()} className="btn">Sign Out</button>
         ) : (
           <>
             <NavLink className={"btn"} to={"/register"}>
