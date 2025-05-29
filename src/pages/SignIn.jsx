@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 import registerLottie from "../assets/lotties/register.json";
 
 const SignIn = () => {
