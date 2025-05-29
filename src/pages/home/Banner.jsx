@@ -10,8 +10,9 @@ const Banner = () => {
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <motion.h1 initial={{rotate: -180}}
-            animate={{rotate: 0,  transition: { duration: 4 } }}
+          <motion.h1
+            initial={{ rotate: -180 }}
+            animate={{ rotate: 0, transition: { duration: 4 } }}
             className="text-5xl font-bold"
           >
             Latest Jobs For You
@@ -21,9 +22,16 @@ const Banner = () => {
             animate={{ scale: 1, transition: { duration: 4 } }}
             className="text-5xl font-bold"
           >
-            Remote <motion.span animate={{
-              color: ['#de9e00','#00cccc','#b180d7'],transition:{duration:2,repeat}
-            }}>Jobs</motion.span> For You
+            Remote{" "}
+            <motion.span
+              animate={{
+                color: ["#de9e00", "#00cccc", "#b180d7"],
+                transition: { duration: 2, repeat: Infinity },
+              }}
+            >
+              Jobs
+            </motion.span>{" "}
+            For You
           </motion.h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
