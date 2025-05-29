@@ -1,7 +1,8 @@
 import React from 'react';
 
 const HotJobs = () => {
-    const jobsPromise =fetch('')
+    const jobsPromise =fetch('
+        ')
 
 
     return (
