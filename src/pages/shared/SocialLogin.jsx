@@ -5,7 +5,8 @@ const SocialLogin = () => {
   const { signInWithGoogle } = use(AuthContext);
 
   const handleGoogleSignIn = () => {
-    signInWithGoogle();
+    signInWithGoogle()
+    
   };
 
   return (
