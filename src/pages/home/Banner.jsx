@@ -21,7 +21,7 @@ const Banner = () => {
             animate={{ scale: 1, transition: { duration: 4 } }}
             className="text-5xl font-bold"
           >
-            Remote <motion.span>Jobs</motion.span> For You
+            Remote <motion.span >Jobs</motion.span> For You
           </motion.h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
