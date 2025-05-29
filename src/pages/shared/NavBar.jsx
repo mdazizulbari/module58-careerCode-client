@@ -6,7 +6,7 @@ const NavBar = () => {
   const { user } = use(AuthContext);
 
   const handleSignOut=()=>{
-    
+    sign
   }
 
   const links = (
