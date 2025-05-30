@@ -4,6 +4,7 @@ import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/home/Home";
 import Register from "../pages/Register";
 import SignIn from "../pages/SignIn";
+import JobDetails from "../pages/JobDetails";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     Component: RootLayout,
     children: [
       { index: true, Component: Home },
+      { path: "jobs/:id", Component: JobDetails },
       { path: "register", Component: Register },
       { path: "signIn", Component: SignIn },
     ],
