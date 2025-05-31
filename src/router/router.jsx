@@ -11,6 +11,7 @@ const router = createBrowserRouter([
     path: "/",
     Component: RootLayout,
     children: [
+      // testing auto commit
       { index: true, Component: Home },
       {
         path: "jobs/:id",
