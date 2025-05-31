@@ -11,27 +11,27 @@ import JobApply from "../pages/JobApply";
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: RootLayout,
+    element: <RootLayout />,
     children: [
-      // testing auto commit
-      { index: true, Component: Home },
+      { index: true, element: <Home /> },
       {
         path: "jobs/:id",
-        loader: ({ params }) => fetch(`https://localhost:5000/jobs/${params}`),
-        Component: JobDetails,
+        loader: ({ params }) =>
+          fetch(`https://localhost:5000/jobs/${params.id}`),
+        element: <JobDetails />,
       },
       {
         path: "jobApply/:id",
-        loader: ({ params }) => fetch(`https://localhost:5000/jobs/${params}`),
+        loader: ({ params }) =>
+          fetch(`https://localhost:5000/jobs/${params.id}`),
         element: (
           <PrivateRoute>
             <JobApply />
           </PrivateRoute>
         ),
-        // 4min51s
       },
-      { path: "register", Component: Register },
-      { path: "signIn", Component: SignIn },
+      { path: "register", element: <Register /> },
+      { path: "signIn", element: <SignIn /> },
     ],
   },
 ]);
