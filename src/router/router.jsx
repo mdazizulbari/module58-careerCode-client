@@ -12,7 +12,11 @@ const router = createBrowserRouter([
     Component: RootLayout,
     children: [
       { index: true, Component: Home },
-      { path: "jobs/:id", Component: JobDetails },
+      {
+        path: "jobs/:id",
+        loader: ({ params }) => fetch(`https://localhost:5000/jobs/${params}`),
+        Component: JobDetails,
+      },
       { path: "register", Component: Register },
       { path: "signIn", Component: SignIn },
     ],
