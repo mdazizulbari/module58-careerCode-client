@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import useAuth from "../hooks/useAuth";
 
 const JobApply = () => {
@@ -10,12 +10,17 @@ const JobApply = () => {
   const handleApply = (e) => {
     e.preventDefault();
     const form = e.target;
-    const linkedIn=form.linkedIn.value
+    const linkedIn = form.linkedIn.value;
+    const github = form.github.value;
+    const resume = form.resume.value;
+    // console.log(linkedIn, github, resume);
   };
 
   return (
     <div>
-      <h2 className="text-4xl">Apply for Job</h2>
+      <h2 className="text-4xl">
+        Apply for this Job:<Link to={`/jobs/${jobId}`}>{title}</Link>
+      </h2>
       <form onSubmit={handleApply} action="">
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
           <label className="label">LinkedIn Link</label>
