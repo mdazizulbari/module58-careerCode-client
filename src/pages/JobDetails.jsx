@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 
 const JobDetails = () => {
   const { title, _id, company } = useLoaderData();
