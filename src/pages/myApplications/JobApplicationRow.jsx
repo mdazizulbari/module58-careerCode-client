@@ -1,14 +1,12 @@
 import React from "react";
 
-const JobApplicationRow = ({application}) => {
-    const {}=>application
+const JobApplicationRow = ({ application, index }) => {
+  const {linkedIn,} = application;
   return (
     <div>
       <tr>
         <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
+          <label>{index + 1}</label>
         </th>
         <td>
           <div className="flex items-center gap-3">
