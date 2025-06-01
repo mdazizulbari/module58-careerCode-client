@@ -2,14 +2,7 @@ import React, { Suspense } from "react";
 import ApplicationStats from "./ApplicationStats";
 import ApplicationList from "./ApplicationList";
 import useAuth from "../../hooks/useAuth";
-
-const myApplicationsPromise = (email) => {
-  return fetch(`http://localhost:5000/applications?email=${email}`)
-    .then((res) => res.json())
-    .catch((err) => {
-      console.log(err);
-    });
-};
+import { myApplicationsPromise } from "../../api/applicationsApi";
 
 const MyApplications = () => {
   const { user } = useAuth;
