@@ -14,12 +14,14 @@ const JobApply = () => {
     const github = form.github.value;
     const resume = form.resume.value;
     // console.log(linkedIn, github, resume);
+    const application = {
+      jobId, applicant: user.email,
   };
 
   return (
     <div>
       <h2 className="text-4xl">
-        Apply for this Job:<Link to={`/jobs/${jobId}`}>{title}</Link>
+        Apply for this <Link to={`/jobs/${jobId}`}>Job</Link>
       </h2>
       <form onSubmit={handleApply} action="">
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
