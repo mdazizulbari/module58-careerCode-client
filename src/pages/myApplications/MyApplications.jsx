@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ApplicationStats from "./ApplicationStats";
 import ApplicationList from "./ApplicationList";
 
@@ -6,7 +6,9 @@ const MyApplications = () => {
   return (
     <div>
       <ApplicationStats />
-      <ApplicationList />
+      <Suspense fallback={"Loading your Applications..."}>
+        <ApplicationList />
+      </Suspense>
     </div>
   );
 };
