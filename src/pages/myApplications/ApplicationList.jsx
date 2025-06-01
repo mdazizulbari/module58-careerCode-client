@@ -1,4 +1,5 @@
 import React, { use } from "react";
+import JobApplicationRow from "./JobApplicationRow";
 
 const ApplicationList = ({ myApplicationsPromise }) => {
   const applications = use(myApplicationsPromise);
@@ -23,7 +24,13 @@ const ApplicationList = ({ myApplicationsPromise }) => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
+            {applications.map((application, index) => (
+              <JobApplicationRow
+                application={application}
+                key={application._id}
+                index={index}
+              />
+            ))}
           </tbody>
         </table>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 
-const JobApplicationRow = () => {
+const JobApplicationRow = ({application}) => {
+    const {}=>application
   return (
     <div>
       <tr>
