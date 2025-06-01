@@ -55,6 +55,7 @@ const JobApply = () => {
             className="input"
             name="linkedIn"
             placeholder="LinkedIn Profile Link"
+            required
           />
 
           <label className="label">GitHub Link</label>
@@ -63,6 +64,7 @@ const JobApply = () => {
             name="github"
             className="input"
             placeholder="GitHub Link"
+            required
           />
 
           <label className="label">Resume Link</label>
@@ -71,6 +73,7 @@ const JobApply = () => {
             name="resume"
             className="input"
             placeholder="Resume Link"
+            required
           />
 
           <input type="submit" value="Apply" className="btn" />
