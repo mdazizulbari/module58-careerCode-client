@@ -24,7 +24,7 @@ const JobApply = () => {
     };
 
     axios
-      .post("", application)
+      .post("http://localhost:5000/applications", application)
       .then((res) => {
         console.log(res.data);
       })
