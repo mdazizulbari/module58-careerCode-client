@@ -20,11 +20,14 @@ const NavBar = () => {
       <li>
         <NavLink to={"/"}>Home</NavLink>
       </li>
+      {/* for applicant links,check roles as well */}
       {user && (
         <>
           <NavLink to={"/myApplications"}>My Applications</NavLink>
         </>
       )}
+      {/* for recruter, check roles as well */}
+{}
     </>
   );
 
