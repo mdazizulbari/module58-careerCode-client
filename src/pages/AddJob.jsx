@@ -21,7 +21,9 @@ const AddJob = () => {
     newJob.responsibilities = newJob.responsibilities
       .split(",")
       .map((req) => req.trim());
+    console.log(Object.keys(newJob).length);
     console.log(newJob);
+    // 3min40s
   };
 
   return (
@@ -115,7 +117,7 @@ const AddJob = () => {
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
           <legend className="fieldset-legend">Application Deadline</legend>
 
-          <input type="date" className="input" />
+          <input type="date" className="input" name="deadline" />
         </fieldset>
 
         {/* Salary Range */}
