@@ -26,8 +26,14 @@ const NavBar = () => {
           <NavLink to={"/myApplications"}>My Applications</NavLink>
         </>
       )}
-      {/* for recruter, check roles as well */}
-{}
+      {/* for recruiter, check roles as well */}
+      {user && (
+        <>
+          <li>
+            <NavLink to={"/addJob"}>Add Job</NavLink>
+          </li>
+        </>
+      )}
     </>
   );
 
