@@ -39,8 +39,6 @@ const AddJob = () => {
             placeholder="Company Logo URL"
             name="company_logo"
           />
-
-          <button className="btn btn-neutral mt-4">Login</button>
         </fieldset>
 
         {/* job type */}
@@ -104,7 +102,7 @@ const AddJob = () => {
               <input
                 type="text"
                 className="input"
-                name="salaryMin"
+                name="min"
                 placeholder="Minimum Salary"
               />
             </div>
@@ -115,13 +113,17 @@ const AddJob = () => {
                 type="text"
                 className="input"
                 placeholder="Maximum Salary"
-                name="salaryMax"
+                name="max"
               />
             </div>
 
             <div className="">
               <label className="label">Currency</label>
-              <select defaultValue="Select a Currency" className="select">
+              <select
+                defaultValue="Select a Currency"
+                name="currency"
+                className="select"
+              >
                 <option disabled={true}>Job Category</option>
                 <option>BDT</option>
                 <option>USD</option>
@@ -131,20 +133,61 @@ const AddJob = () => {
           </div>
         </fieldset>
 
-        {/*  */}
+        {/* Job Description */}
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-          <legend className="fieldset-legend">Salary Range</legend>
+          <legend className="fieldset-legend">Job Description</legend>
+
+          <textarea
+            className="textarea"
+            placeholder="Job Description"
+            name="description"
+          ></textarea>
         </fieldset>
 
-        {/*  */}
+        {/* Job Requirements */}
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-          <legend className="fieldset-legend">Basic Info</legend>
+          <legend className="fieldset-legend">Job Requirements</legend>
+
+          <textarea
+            className="textarea"
+            placeholder="Requirements (saparated by comma)"
+            name="requirements"
+          ></textarea>
         </fieldset>
 
-        {/*  */}
+        {/* Job Responsibilities */}
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-          <legend className="fieldset-legend">Basic Info</legend>
+          <legend className="fieldset-legend">Job Responsibilities</legend>
+
+          <textarea
+            className="textarea"
+            placeholder="Responsibilities (saparated by comma)"
+            name="responsibilities"
+          ></textarea>
         </fieldset>
+
+        {/* HR Details */}
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+          <legend className="fieldset-legend">HR Details</legend>
+
+          <label className="label">HR Name</label>
+          <input
+            type="text"
+            className="input"
+            placeholder="HR Name"
+            name="hr_name"
+          />
+
+          <label className="label">Company</label>
+          <input
+            type="email"
+            className="input"
+            placeholder="HR Email"
+            name="hr_email"
+          />
+        </fieldset>
+
+        <input type="submit" value="Add Job" className="btn" />
       </form>
     </div>
   );
