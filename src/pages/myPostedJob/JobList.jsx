@@ -24,7 +24,7 @@ const JobList = ({ jobsCreatedByPromise }) => {
                 <td>{job.title}</td>
                 <td>{job.deadline}</td>
                 <td>
-                  <Link to={`/applications/${job._id}`}>View Applications</Link>
+                  <Link className="btn" to={`/applications/${job._id}`}>View Applications</Link>
                 </td>
               </tr>
             ))}

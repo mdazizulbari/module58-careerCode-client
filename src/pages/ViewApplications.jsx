@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData, useParams } from "react-router";
 
 const ViewApplications = () => {
-    return (
-        <div>
-            {/*3m40s  */}
-        </div>
-    );
+  const { job_id } = useParams();
+  const applications = useLoaderData();
+
+  return (
+    <div>
+      <h2 className="text-4xl">
+        {applications.length}applications for: {job_id}
+      </h2>
+    </div>
+  );
 };
 
 export default ViewApplications;
