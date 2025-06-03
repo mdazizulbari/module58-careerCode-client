@@ -9,7 +9,7 @@ import PrivateRoute from "../routes/PrivateRoute";
 import JobApply from "../pages/JobApply";
 import MyApplications from "../pages/myApplications/MyApplications";
 import AddJob from "../pages/AddJob";
-import MyPostedJobs from "../pages/MyPostedJobs";
+import MyPostedJobs from "../pages/myPostedJob/MyPostedJobs";
 
 const router = createBrowserRouter([
   {

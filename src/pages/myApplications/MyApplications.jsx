@@ -6,7 +6,7 @@ import { myApplicationsPromise } from "../../api/applicationsApi";
 
 const MyApplications = () => {
   const { user } = useAuth();
-  console.log(user)
+  // console.log(user)
 
   return (
     <div>
