@@ -3,7 +3,6 @@ import React from "react";
 const JobApplicationRow = ({ application, index }) => {
   const { company, company_logo, title } = application;
   return (
-    <div>
       <tr>
         <th>
           <label>{index + 1}</label>
@@ -33,7 +32,6 @@ const JobApplicationRow = ({ application, index }) => {
           <button className="btn btn-ghost btn-xs">details</button>
         </th>
       </tr>
-    </div>
   );
 };
 
