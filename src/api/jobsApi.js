@@ -1,6 +1,8 @@
 export const jobsCreatedByPromise = (email) => {
   return (
-    fetch(`http://localhost:5000/jobs/applications?email=${email}`)
+    fetch(`http://localhost:5000/jobs/applications?email=${email}`, {
+      credentials: "include",
+    })
       // return fetch(`http://localhost:5000/jobsByEmailAddress?email=${email}`)
       .then((res) => res.json())
       .catch((err) => {
