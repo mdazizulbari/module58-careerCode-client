@@ -2,12 +2,13 @@ import React, { Suspense } from "react";
 import ApplicationStats from "./ApplicationStats";
 import ApplicationList from "./ApplicationList";
 import useAuth from "../../hooks/useAuth";
-import { myApplicationsPromise } from "../../api/applicationsApi";
+import useApplicationApi from "../../api/useApplicationApi";
 
 const MyApplications = () => {
   const { user } = useAuth();
   // console.log(user)
-  console.log("firebase token", user.accessToken);
+  const { myApplicationsPromise } = useApplicationApi();
+  // console.log("firebase token", user.accessToken);
 
   return (
     <div>
