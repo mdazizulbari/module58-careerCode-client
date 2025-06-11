@@ -6,7 +6,8 @@ const useApplicationApi = () => {
 
   const myApplicationsPromise = (email) => {
     return axiosSecure
-      .get(`applications?email=${email}`)
+      .get(`applications?email=fire@base.com`)
+      // .get(`applications?email=${email}`)
       .then((res) => res.data)
       .catch((err) => console.log(err));
   };

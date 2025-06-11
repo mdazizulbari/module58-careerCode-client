@@ -13,7 +13,6 @@ const useAxiosSecure = () => {
     config.headers.authorization = `Bearer ${user?.accessToken}`;
     return config;
   });
-  // 8m20s
 
   // response interceptor
   axiosInstance.interceptors.response.use(
@@ -21,8 +20,8 @@ const useAxiosSecure = () => {
       return response;
     },
     (error) => {
-      // console.log('error')
-      if (error.status === 401) {
+      console.log(error);
+      if (error.status === 401 || error.status === 403) {
         signOutUser()
           .then(() => {
             console.log("sign out user for 401 status code");
