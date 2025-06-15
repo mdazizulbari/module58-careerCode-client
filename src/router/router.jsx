@@ -21,13 +21,17 @@ const router = createBrowserRouter([
       {
         path: "jobs/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/jobs/${params.id}`),
+          fetch(
+            `https://module58-career-code-server.vercel.app/jobs/${params.id}`
+          ),
         element: <JobDetails />,
       },
       {
         path: "jobApply/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/jobs/${params.id}`),
+          fetch(
+            `https://module58-career-code-server.vercel.app/jobs/${params.id}`
+          ),
         element: (
           <PrivateRoute>
             <JobApply />
@@ -37,7 +41,9 @@ const router = createBrowserRouter([
       {
         path: "applications/:job_id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/applications/job/${params.job_id}`),
+          fetch(
+            `https://module58-career-code-server.vercel.app/applications/job/${params.job_id}`
+          ),
         element: (
           <PrivateRoute>
             <ViewApplications />
